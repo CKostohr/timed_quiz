@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz!</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css"> 
+</head>
+<body>
+    <header>
+        <div><a href="assets/highScore.html">View HighScores</a></div>
+        <div>Timer: <span id="timer"></span></div>
+    </header>
+    <section>
+        <h2 id="codeQuiz">Test your JavaScript Knowledge!</h2>
+        <span id="instructions"><P>This is a timed quiz.</P>
+            <p>Your final score is the time remaining. </p>
+            <p>For each wrong answer, time will be deducted.</p></span>
+        <br>
+            <button id="startButton">Begin!</button>
+    </section>
+    <section>
+        <div id="question1" class="hide" class="question">
+           <!-- h3 needs questions h4 needs answers!-->
+        <h3></h3>
+            <div class="options">  
+                <h4 value="incorrect">1) </h4> 
+                <h4 value="incorrect">2) </h4> 
+                <h4 value="incorrect">3) </h4> 
+                <h4 value="correct">4) </h4>
+            </div>
+        </div>
+        <div id="question2" class="hide" class="question">
+        <h3></h3>
+             <div class="options">  
+                <h4 value="correct">1) </h4>
+                <h4 value="incorrect">2) </h4>
+                <h4 value="incorrect">3) </h4>
+                <h4 value="incorrect">4)  </h4>
+            </div>
+        </div>
+        <div id="question3" class="hide" class="question">
+        <h3></h3>
+            <div class="options">  
+                <h4 value="incorrect">1) </h4>
+                <h4 value="incorrect">2) </h4>
+                <h4 value="correct">3) </h4>
+                <h4 value="incorrect">4) </h4>
+            </div>
+        </div>
+        <div id="question4" class="hide" class="question">
+        <h3></h3>
+            <div class="options">  
+                <h4 value="incorrect">1)  </h4>
+                <h4 value="incorrect">2) </h4>
+                <h4 value="correct">3) </h4>
+                <h4 value="incorrect">4) </h4>
+            </div>
+        </div>
+        <div id="question5" class="hide" class="question">
+        <h3></h3>
+            <div class="options">  
+                <h4 value="correct">1) </h4>
+                <h4 value="incorrect">2) </h4>
+                <h4 value="incorrect">3) </h4>
+                <h4 value="incorrect">4) </h4>
+            </div>
+        </div>
+        <div id="correct"></div>
+        <form id="form" class="hide">
+            <h2>Great Job!</h2>
+            <span id="score"></span><br>
+            <label for="initials">Enter Name Here:</label>
+            <input type="text" id="initials">
+            <a id="submit" href="./assets/highScore.html"><div id="submitButton">SUBMIT</div></a>
+        </form>
+    </section>
+<script src="./assets/JS/script.js"></script>
+</body>
+</html>
